@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1442324554967.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2E2F51A7",
+    "lastKnownWriteTime" : 10891072,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "26dihnui74",
+        "caption" : "data",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=data&cache_key=26dihnui74",
+        "displayedObservations" : 29754,
+        "environment" : "",
+        "object" : "data",
+        "totalObservations" : 29754,
+        "variables" : 2
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

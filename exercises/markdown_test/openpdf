@@ -1,0 +1,2 @@
+pandoc -o test.pdf test.md
+evince test.pdf

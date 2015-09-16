@@ -1,0 +1,24 @@
+Wie viele Feature-Typen gibt es und wie viele Mitglieder at jeder dieser Liste?
+
+till@till-Studio-XPS-1640:~/Dokumente/F1_Praktikum_Systembiologie$ grep -v "#" gencode.v23.annotation.gff3 | cut -f 3 | sort | uniq -c
+ 701093 CDS
+1173255 exon
+  60498 gene
+  82238 start_codon
+  73707 stop_codon
+    114 stop_codon_redefined_as_selenocysteine
+ 198619 transcript
+ 273042 UTR
+
+Wie viele Gene liegen auf Chr 19 auf dem Plus- und wie viele auf dem Minus-Strang?
+
+till@till-Studio-XPS-1640:~/Dokumente/F1_Praktikum_Systembiologie$ grep -v "#" gencode.v23.annotation.gff3 | cut -f 1,3,7 | grep gene | grep chr19 | grep + | wc -l
+1542
+till@till-Studio-XPS-1640:~/Dokumente/F1_Praktikum_Systembiologie$ grep -v "#" gencode.v23.annotation.gff3 | cut -f 1,3,7 | grep gene | grep chr19 | grep - | wc -l
+1464
+
+Wie viele verschiedene SeqID?
+
+till@till-Studio-XPS-1640:~/Dokumente/F1_Praktikum_Systembiologie$ grep -v "#" gencode.v23.annotation.gff3  | cut -f 1 | grep chr | uniq
+chr1
+chr2
